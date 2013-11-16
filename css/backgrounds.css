@@ -207,17 +207,19 @@ nav #pull {
  #section1 .service-text{
 	padding: 13% 0 0 0;
  }
-
+/*
  #section1 .start{
 	background-image: url(../img/backgrounds/h-land-1.jpg);
  }
  #section1 .expo{
 	background-image: url(../img/backgrounds/h-land-5.jpg);
  }
+*/
 
 
-
-
+ #section1{
+	background-image: url(../img/backgrounds/h-land-1.jpg);
+ }
  #section2{
 	background-image: url(../img/backgrounds/h-land-2.jpg);
 	padding: 17% 0 0 0;
