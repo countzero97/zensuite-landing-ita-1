@@ -1,101 +1,133 @@
 <!DOCTYPE html>
-<html>
-   <head>
-      <meta charset="UTF-8">
-      <meta content="width=device-width, initial-scale=1.0" name="viewport">
-      <link href="img/favicon.ico" rel="shortcut icon" />
-      <title>Ospita.me</title>
-      <!-- Css -->
-      <link href="css/bootstrap.css" media="screen" rel="stylesheet">
-      <link href="css/jquery.fullPage.css" media="screen" rel="stylesheet">
-      <link href="css/main.css" media="screen" rel="stylesheet">
-      <link href="css/animate.css" media="screen" rel="stylesheet">
-      <link href="css/font-awesome.min.css" media="screen" rel="stylesheet">
-      <link href='http://fonts.googleapis.com/css?family=Raleway:400,700,200' rel='stylesheet' type='text/css'>
-      
-      <meta property="og:title" content="Ospita.me"/>
-      <meta property="og:image" content="http://ospita.me/img/logo.png"/>
-      <meta property="og:site_name" content="Ospita.me"/>
-      <meta property="og:description" content="Ospita.me ti offre una soluzione di marketing digitale totalmente integrata, semplice da utilizzare e alla portata di ogni budget, che aiuta le strutture ricettive di ogni dimensione a gestire la propria presenza online per aumentare il tasso di occupazione e ridurre i costi di distribuzione facilitando la disintermediazione."/>
-      <!-- IE8 support of HTML5 elements and media queries -->
-      <!--[if lt IE 9]>
-      <script src="js/html5shiv.js"></script>
-      <script src="js/respond.min.js"></script>
-      <![endif]-->
-      <script type="text/javascript">
+<html xmlns="http://www.w3.org/1999/xhtml">
 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-44951440-1']);
-  _gaq.push(['_trackPageview']);
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />	
+	<title>Ospita.me</title>
+	<meta name="description" content="Digital power for your hotel" />
+	<meta name="keywords"  content="gestionale hotel,booking engine,channel manager,sito web hotel" />
+	
+	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="css/backgrounds.css" />
+	<link rel="stylesheet" type="text/css" href="css/animate.css" />
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+	<link href='http://fonts.googleapis.com/css?family=Raleway:400,500,700' rel='stylesheet' type='text/css'>
+		
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>	
+	
+	<script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
+	<script type="text/javascript" src="js/jquery.jpanelmenu.min.js"></script>
+	<script type="text/javascript" src="js/examples.js"></script>
 
-</script>
-   </head>
-   <body >
-      <!-- Javascript -->
-      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> 
-      <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script> 
-      <script src="js/bootstrap.min.js"></script>
-      <script src="js/holder.js"></script>
-      <script src="js/jquery.fullPage.js"></script>
-      <script src="js/main.js"></script>
-      <script type="text/javascript">
-         //fullPage
-         $(document).ready(function() {
-           $.fn.fullpage({
-             anchors: ['home', 'website-building','mobile-and-tablets', 'booking-engine', 'facebook-app','social-monitoring', 'channel-manager', 'hotel-management','revenue-management'],
-             menu: '#icons-navigation',
-             resize: false,
-             afterLoad: function(anchorLink, index){
-                if(anchorLink == 'website-building'){
-                    $('#tab-build').addClass('animated flipInX visible');
-                }
-                if(anchorLink == 'mobile-and-tablets'){
-                    $('#tab-mobile').addClass('animated bounceIn visible');
-                }
-             }
-           });
-           
-         });
-      </script>
-      <nav id="nav-fixed" class="navbar navbar-fixed" role="navigation">
-         <!-- Brand and toggle get grouped for better mobile display -->
-         <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#home"><img src="/img/logo-black.png" alt="ospita.me"></a>
-         </div>
-         <!-- Collect the nav links, forms, and other content for toggling -->
-         <div class="collapse navbar-collapse navbar-ex1-collapse">
-            <ul class="nav navbar-nav navbar-h-right">
-               <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services <b class="caret"></b></a>
-                  <ul class="dropdown-menu">
-                     <li><a href="#website-building">Website Building</a></li>
-                     <li><a href="#mobile-and-tablets">Responsive Layout</a></li>
-                     <li><a href="#booking-engine">Booking Engine</a></li>
-                     <li><a href="#facebook-app">Facebook App</a></li>
-                     <li><a href="#social-monitoring">Social Monitoring</a></li>
-                     <li><a href="#channel-manager">Channel Manager</a></li>
-                     <li><a href="#hotel-management">Hotel Management</a></li>
-                     <li><a href="#revenue-management">Revenue Management</a></li>
-                  </ul>
-               </li>
-            </ul>
-         </div>
-         <!-- /.navbar-collapse -->
-      </nav>
-      <div id="icon-menu" >
-         <ul id="icons-navigation" class="nav nav-pills nav-stacked" data-role="navigation" >
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#section0 .service').addClass('animated fadeInDown visible');
+
+			/* Fullpage scroll */
+			$.fn.fullpage({
+				anchors: ['home', 'website-building','mobile-and-tablets', 'booking-engine', 'facebook-app','social-monitoring', 'channel-manager', 'hotel-management','revenue-management'],
+				verticalCentered: false,
+		        resize : false,
+		        scrollingSpeed: 700,
+		        navigation: false,
+		        navigationPosition: 'right',
+		        loopBottom: false,
+		        loopTop: false,
+		        autoScrolling: true,
+		        scrollOverflow: false,
+		        css3: true,
+		        menu: '.menu-stay',
+				
+				afterLoad: function(anchorLink, index){
+			    	$('#section'+(index-1)+' .service').addClass('animated fadeInDown visible');
+	 			},
+	 			onLeave: function(index, direction){
+	 			}
+			});
+
+			/* Jpanel Menu */
+			var jPM = $.jPanelMenu({
+			    menu: '.concrete-menu',
+			    trigger: '.menu-trigger',
+			    duration: 300,
+			    keyboardShortcuts: false
+			});
+
+			jPM.on();
+
+
+			/* Menu tooltips */
+			
+
+
+		});
+
+ $(function() {
+    $( document ).tooltip({ position: { my: "left+15 center", at: "right center" } });
+  });
+	</script>
+
+</head>
+<body>
+
+
+<nav id="menu" class="menu-stay">
+	<div class="menu-content">
+		<ul class="pull-left">
+	    	<li class="logo"><a href="#home"><img src="img/logo-xs.png"><span>ospita.me</span></a></li>
+	    </ul>
+	    <ul class="pull-right concrete-menu">
+	        <!--<li><a href="#">Servizi</a></li>
+	        <li><a href="#">Prezzi</a></li>
+	        <li><a href="#">Blog</a></li>
+	        <li><a href="#">Accedi</a></li>
+	        <li><a href="#">Registrati</a></li>-->
+	    </ul>
+	    <ul id="pull" class="menu-trigger">
+	    	<li><a>Menu</a></li>
+	    </ul>
+	</div>
+</nav>
+
+
+<div id="icon-menu" class="menu-stay" >
+         <ul id="icon-navigation" data-role="navigation" >
+         	<li class="menu-icon" data-menuanchor="home" >
+               <a href="#home" data-toggle="tooltip" title="home" ><span>Home</span></a>
+            </li>
+            <li class="menu-icon" data-menuanchor="website-building">
+               <a href="#website-building" data-toggle="tooltip" title="Website Building" ><span>Website Builder</span></a>
+            </li>
+            <li class="menu-icon" data-menuanchor="mobile-and-tablets" >
+               <a href="#mobile-and-tablets" data-toggle="tooltip" title="Responsive Layout" ><span>Responsive Layout</span></a>
+            </li>
+            <li class="menu-icon" data-menuanchor="booking-engine">
+               <a href="#booking-engine" data-toggle="tooltip" title="Booking Engine"><span>Booking Engine</span><img src="img/svg/booking.svg" alt="#" ></a>
+            </li>
+            <li class="menu-icon" data-menuanchor="facebook-app">
+               <a href="#facebook-app" data-toggle="tooltip" title="Facebook App" ><span>Facebook App</span><img src="img/svg/facebook-app.svg" alt="#" ></a>
+            </li>
+            <li class="menu-icon" data-menuanchor="social-monitoring">
+               <a href="#social-monitoring" data-toggle="tooltip" title="Social Monitoring"><span>Social Monitoring</span><img src="img/svg/social-monitoring.svg" alt="#" ></a>
+            </li>
+            <li class="menu-icon" data-menuanchor="channel-manager">
+               <a href="#channel-manager" data-toggle="tooltip" title="Channel Manager"><span>Channel Manager</span><img src="img/svg/channel-manager.svg" alt="#" ></a>
+            </li>
+            <li class="menu-icon" data-menuanchor="hotel-management">
+               <a href="#hotel-management" data-toggle="tooltip" title="Hotel Management"><span>Hotel Management</span><img src="img/svg/hotel-management.svg" alt="#" ></a>
+            </li>
+            <li class="menu-icon" data-menuanchor="revenue-management">
+               <a href="#revenue-management" data-toggle="tooltip" title="Revenue Management"><span>Revenue Management</span><img class="icon-svg" src="img/svg/revenue.svg" alt="#" ></a>
+            </li>
+         </ul>
+      </div>
+
+
+<!--
+      <div id="menu" class="h-menu" >
+         <ul id="icon-navigation" data-role="navigation" >
+         	<li class="menu-trigger">MENU</li>
             <li class="menu-icon" data-menuanchor="website-building">
                <a href="#website-building" data-toggle="tooltip" title="Website Building" ><span>Website Builder</span><img src="img/svg/build-website.svg" alt="#" ></a>
             </li>
@@ -121,147 +153,89 @@
                <a href="#revenue-management" data-toggle="tooltip" title="Revenue Management"><span>Revenue Management</span><img class="icon-svg" src="img/svg/revenue.svg" alt="#" ></a>
             </li>
          </ul>
-      </div>
+      </div>-->
 
-      <!-- home -->
-      <div class="section h-home" id="section0">
-         <div class="container">
-            <div class="centered row">
-               <div class="col-xs-0 col-sm-2 col-md-2"></div>
-               <div class="col-xs-9 col-sm-8 col-md-8">
-                  <div id="digital-power" >
-                     <h1>Digital power for your hotel</h1>
-                     <h2>Tutti gli strumenti di marketing digitale per il tuo hotel</h2>
-                  </div>
-                  <!-- MailChimp -->
-                  <div id="mc_embed_signup" class="control-group">
-                     <form action="http://ospita.us7.list-manage.com/subscribe/post?u=31354df2e0d65475e24cb2fb7&amp;id=6db61d3ed0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                        <label class="control-label" for="mce-EMAIL">RIMANI AGGIORNATO</label>
-                        <div class="input-group input-group-lg input-no-radius">
-                           <span class="input-group-addon"><i class="icon-envelope"></i></span>
-                           <input type="text" class="form-control" id="mce-EMAIL" value="" name="EMAIL" placeholder="email address" required>
-                           <span class="input-group-btn">
-                           <input type="submit" name="subscribe" class="btn btn-danger" value="Subscribe" >
-                           </span>
-                        </div>
-                     </form>
-                  </div>
-                  <!-- End MailChimp -->
-               </div>
-            </div>
-         </div>
-      </div>
-      <!-- 1 build website -->
-      <div class="section h-home" id="section1">
-         <div class="container">
-            <div class="centered row">
-               <div class="col-xs-0 col-sm-2 col-md-2"></div>
-               <div class="col-xs-9 col-sm-8 col-md-8">
-                  <div id="tab-build" class="not-visible" >
-                     <h1>Costruisci <br>il tuo sito</h1>
-                     <h2>Tutti gli strumenti di marketing digitale per il tuo hotel</h2>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-      <!-- 2 mobile -->       
-      <div class="section h-home" id="section2">
-         <div class="container">
-            <div class="centered row">
-               <div class="col-xs-0 col-sm-2 col-md-2"></div>
-               <div class="col-xs-9 col-sm-8 col-md-8">
-                  <div id="tab-mobile" class="not-visible">
-                     <h1>Mobile</h1>
-                     <h2>Per essere sempre ad un touch di distanza dai tuoi clienti, ovunque essi siano</h2>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-      <!-- 3 booking engine -->
-      <div class="section h-home" id="section3">
-         <div class="container">
-            <div class="centered row">
-               <div class="col-xs-0 col-sm-2 col-md-2"></div>
-               <div class="col-xs-9 col-sm-8 col-md-8">
-                  <div id="digital-power" >
-                     <h1>Booking Engine</h1>
-                     <h2>Un booking engine sempre perfetto: su web, smartphone e social network</h2>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-      <!-- 4 facebook app -->
-      <div class="section h-home" id="section4">
-         <div class="container">
-            <div class="centered row">
-               <div class="col-xs-0 col-sm-2 col-md-2"></div>
-               <div class="col-xs-9 col-sm-8 col-md-8">
-                  <div id="digital-power" >
-                     <h1>Facebook App</h1>
-                     <h2>Permetti ai tuoi clienti di prenotare direttamente da Facebook</h2>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-      <!-- 5 social monitoring -->
-      <div class="section h-home" id="section5">
-         <div class="container">
-            <div class="centered row">
-               <div class="col-xs-0 col-sm-2 col-md-2"></div>
-               <div class="col-xs-9 col-sm-8 col-md-8">
-                  <div id="digital-power" >
-                     <h1>Social Monitor</h1>
-                     <h2>La tua reputazione conta. Controlla e gestisci le recensioni online da un'unica piattaforma</h2>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-      <!-- 6 channel manager -->
-      <div class="section h-home" id="section6">
-         <div class="container">
-            <div class="centered row">
-               <div class="col-xs-0 col-sm-2 col-md-2"></div>
-               <div class="col-xs-9 col-sm-8 col-md-8">
-                  <div id="digital-power" >
-                     <h1>Channel Manager</h1>
-                     <h2>Gestisci tutti i tuoi canali di vendita da un'unica interfaccia</h2>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-      <!-- 7 software gestionale -->
-      <div class="section h-home" id="section7">
-         <div class="container">
-            <div class="centered row">
-               <div class="col-xs-0 col-sm-2 col-md-2"></div>
-               <div class="col-xs-9 col-sm-8 col-md-8">
-                  <div id="digital-power" >
-                     <h1>Software Gestionale</h1>
-                     <h2>Check-in, check-out, addebiti, fatture, schedine PS, Istat e tanto altro</h2>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-      <!-- 8 revenue management -->
-      <div class="section h-home" id="section8">
-         <div class="container">
-            <div class="centered row">
-               <div class="col-xs-0 col-sm-2 col-md-2"></div>
-               <div class="col-xs-9 col-sm-8 col-md-8">
-                  <div id="digital-power" >
-                     <h1>Revenue management e cost control</h1>
-                     <h2>Pianifica e ottimizza ricavi e costi della tua struttura</h2>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-   </body>
+
+
+<div class="section" id="section0">
+	<div class="service white">
+		<h1>DIGITAL POWER <br/> FOR YOUR HOTEL</h1>
+		<h2>TUTTI GLI STRUMENTI DI MARKETING DIGITALE PER IL TUO HOTEL</h2>
+	</div>
+</div>
+
+<div class="section" id="section1">
+	<div class="slide start">
+		<div class="service service-text">
+			<h1>COSTRUISCI <br/> IL TUO SITO</h1>
+			<h2>SCEGLI UN TEMPLATE E PORTA IL TUO BUSINESS ONLINE</h2>
+		</div>
+	</div>
+	<div class="slide expo">
+		<div class="service service-text">
+			<h1>SERVICE DESCRIPTION</h1>
+			<p>Service text 1</p>
+		</div>
+	</div>
+    <div class="slide feature">
+		<div class="service service-text">
+			<h1>FEATURE 2</h1>
+			<p>LOREM IPSUM DOLOR SIT AMET</p>
+		</div>
+	</div>
+</div>
+
+
+<div class="section white" id="section2">
+	<div class="service service-text">
+		<h1>MOBILE</h1>
+		<h2>PER ESSERE SEMPRE AD UN TOUCH DI DISTANZA DAI TUOI CLIENTI, OVUNQUE ESSI SIANO</h2>
+	</div>
+</div>
+
+<div class="section" id="section3">
+	<div class="service service-text">
+		<h1>BOOKING ENGINE</h1>
+		<h2>UN BOOKING ENGINE SEMPRE PERFETTO: SU WEB, SMARTPHONE E SOCIAL NETWORK</h2>
+	</div>
+</div>
+
+<div class="section" id="section4">
+	<div class="service service-text">
+		<h1>FACEBOOK APP</h1>
+		<h2>PERMETTI AI TUOI CLIENTI DI PRENOTARE DIRETTAMENTE DA FACEBOOK</h2>
+	</div>
+</div>
+
+<div class="section" id="section5">
+	<div class="service white">
+		<h1>SOCIAL MONITOR</h1>
+		<h2>LA TUA REPUTAZIONE CONTA. CONTROLLA E GESTISCI LE RECENSIONI ONLINE DA UN'UNICA PIATTAFORMA</h2>
+	</div>
+</div>
+
+<div class="section" id="section6">
+	<div class="service service-text">
+		<h1>CHANNEL MANAGER</h1>
+		<h2>GESTISCI TUTTI I TUOI CANALI DI VENDITA DA UN'UNICA INTERFACCIA</h2>
+	</div>
+</div>
+
+<div class="section" id="section7">
+	<div class="service white">
+		<h1>SOFTWARE GESTIONALE</h1>
+		<h2>CHECK-IN, CHECK-OUT, ADDEBITI, FATTURE, SCHEDULE PS, ISTAT E TANTO ALTRO</h2>
+	</div>
+</div>
+
+<div class="section" id="section8">
+	<div class="service white">
+		<h1>REVENUE MANAGEMENT</h1>
+		<h2>PIANIFICA E OTTIMIZZA RICAVI E COSTI DELLA TUA STRUTTURA</h2>
+	</div>
+</div>
+
+
+
+</body>
 </html>
