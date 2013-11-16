@@ -297,16 +297,32 @@ nav #pull {
     		font-size: 2em;
     	}
 		 
-		#section0,
-		#section1,
-		#section2,
-		#section3,
-		#section4,
-		#section5,
-		#section6,
-		#section7,
+		#section0{
+			padding:40% 0 0 0;
+		}
+		#section1{
+			padding:45% 0 0 0;
+		}
+		#section2{
+			padding:60% 0 0 0;
+		}
+		#section3{
+			padding:60% 0 0 0;
+		}
+		#section4{
+			padding:60% 0 0 0;
+		}
+		#section5{
+			padding:43% 0 0 0;
+		}
+		#section6{
+			padding:41% 0 0 0;
+		}
+		#section7{
+			padding:56% 0 0 0;
+		}
 		#section8 {
-			padding: 20% 0 0 0;
+			padding:45% 0 0 0;
 		}
 
     }
