@@ -29,8 +29,8 @@
 			var goScroll = true;
 			if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
 				goScroll = false;
+				$('.service').addClass('visible');
 			}
-
 
 			/* Fullpage scroll */
 			$.fn.fullpage({

@@ -159,9 +159,8 @@ nav #pull {
 	position:absolute;
 	top: 80px;
 	z-index: 1;
-	width: 100%;
-	right: 20px;
-	width: 20px;
+	width: 90px;
+	right: 0;
 }
 
 #icon-menu span,
@@ -215,7 +214,7 @@ nav #pull {
  * --------------------------------------- */
 
 .service {
-	visibility: visible;
+	visibility: hidden;
 }
 
 .visible {
