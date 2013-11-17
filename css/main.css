@@ -215,7 +215,7 @@ nav #pull {
  * --------------------------------------- */
 
 .service {
-	visibility: hidden;
+	visibility: visible;
 }
 
 .visible {
