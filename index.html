@@ -10,7 +10,7 @@
 	
   <link rel="shortcut icon" href="/favicon.ico" />
 	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
-	<link rel="stylesheet" type="text/css" href="css/backgrounds.css" />
+	<link rel="stylesheet" type="text/css" href="css/main.css" />
 	<link rel="stylesheet" type="text/css" href="css/animate.css" />
 
 	<link href='http://fonts.googleapis.com/css?family=Raleway:400,500,700' rel='stylesheet' type='text/css'>
@@ -26,6 +26,12 @@
 		$(document).ready(function() {
 			$('#section0 .service').addClass('animated fadeInDown visible');
 
+			var goScroll = true;
+			if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+				goScroll = false;
+			}
+
+
 			/* Fullpage scroll */
 			$.fn.fullpage({
 				anchors: ['home', 'website-building','mobile-and-tablets', 'booking-engine', 'facebook-app','social-monitoring', 'channel-manager', 'hotel-management','revenue-management'],
@@ -33,10 +39,10 @@
 		        resize : false,
 		        scrollingSpeed: 700,
 		        navigation: false,
-		        navigationPosition: 'right',
+		        navigationPosition: 'left',
 		        loopBottom: false,
 		        loopTop: false,
-		        autoScrolling: true,
+		        autoScrolling: goScroll,
 		        scrollOverflow: false,
 		        css3: true,
 		        menu: '.menu-stay',
@@ -57,17 +63,13 @@
 			});
 
 			jPM.on();
-
-
-			/* Menu tooltips */
 			
-
-
 		});
 
- $(function() {
-    $( document ).tooltip({ position: { my: "left+15 center", at: "right center" } });
-  });
+		/* Tooltips */
+		$(function() {
+			$( document ).tooltip({ position: { my: "left+15 center", at: "right center" } });
+		});
 	</script>
 
 </head>
@@ -99,57 +101,57 @@
 </nav>
 
 
-<div id="icon-menu" class="menu-stay" >
-         <ul id="icon-navigation" data-role="navigation" >
-         	<li class="menu-icon" data-menuanchor="home" >
-               <a href="#home" data-toggle="tooltip" title="home" ><span>Home</span></a>
-            </li>
-            <li class="menu-icon" data-menuanchor="website-building">
-               <a href="#website-building" data-toggle="tooltip" title="Website Building" ><span>Website Builder</span></a>
-            </li>
-            <li class="menu-icon" data-menuanchor="mobile-and-tablets" >
-               <a href="#mobile-and-tablets" data-toggle="tooltip" title="Responsive Layout" ><span>Responsive Layout</span></a>
-            </li>
-            <li class="menu-icon" data-menuanchor="booking-engine">
-               <a href="#booking-engine" data-toggle="tooltip" title="Booking Engine"><span>Booking Engine</span><img src="img/svg/booking.svg" alt="#" ></a>
-            </li>
-            <li class="menu-icon" data-menuanchor="facebook-app">
-               <a href="#facebook-app" data-toggle="tooltip" title="Facebook App" ><span>Facebook App</span><img src="img/svg/facebook-app.svg" alt="#" ></a>
-            </li>
-            <li class="menu-icon" data-menuanchor="social-monitoring">
-               <a href="#social-monitoring" data-toggle="tooltip" title="Social Monitoring"><span>Social Monitoring</span><img src="img/svg/social-monitoring.svg" alt="#" ></a>
-            </li>
-            <li class="menu-icon" data-menuanchor="channel-manager">
-               <a href="#channel-manager" data-toggle="tooltip" title="Channel Manager"><span>Channel Manager</span><img src="img/svg/channel-manager.svg" alt="#" ></a>
-            </li>
-            <li class="menu-icon" data-menuanchor="hotel-management">
-               <a href="#hotel-management" data-toggle="tooltip" title="Hotel Management"><span>Hotel Management</span><img src="img/svg/hotel-management.svg" alt="#" ></a>
-            </li>
-            <li class="menu-icon" data-menuanchor="revenue-management">
-               <a href="#revenue-management" data-toggle="tooltip" title="Revenue Management"><span>Revenue Management</span><img class="icon-svg" src="img/svg/revenue.svg" alt="#" ></a>
-            </li>
-         </ul>
-      </div>
+  <div id="icon-menu" class="menu-stay" >
+     <ul id="icon-navigation" data-role="navigation" >
+     	<li class="menu-icon active" data-menuanchor="home" >
+           <a href="#home" data-toggle="tooltip" title="home" ><span>Home</span></a>
+        </li>
+        <li class="menu-icon" data-menuanchor="website-building">
+           <a href="#website-building" data-toggle="tooltip" title="Website Building" ><span>Website Builder</span></a>
+        </li>
+        <li class="menu-icon" data-menuanchor="mobile-and-tablets" >
+           <a href="#mobile-and-tablets" data-toggle="tooltip" title="Responsive Layout" ><span>Responsive Layout</span></a>
+        </li>
+        <li class="menu-icon" data-menuanchor="booking-engine">
+           <a href="#booking-engine" data-toggle="tooltip" title="Booking Engine"><span>Booking Engine</span><img src="img/svg/booking.svg" alt="#" ></a>
+        </li>
+        <li class="menu-icon" data-menuanchor="facebook-app">
+           <a href="#facebook-app" data-toggle="tooltip" title="Facebook App" ><span>Facebook App</span><img src="img/svg/facebook-app.svg" alt="#" ></a>
+        </li>
+        <li class="menu-icon" data-menuanchor="social-monitoring">
+           <a href="#social-monitoring" data-toggle="tooltip" title="Social Monitoring"><span>Social Monitoring</span><img src="img/svg/social-monitoring.svg" alt="#" ></a>
+        </li>
+        <li class="menu-icon" data-menuanchor="channel-manager">
+           <a href="#channel-manager" data-toggle="tooltip" title="Channel Manager"><span>Channel Manager</span><img src="img/svg/channel-manager.svg" alt="#" ></a>
+        </li>
+        <li class="menu-icon" data-menuanchor="hotel-management">
+           <a href="#hotel-management" data-toggle="tooltip" title="Hotel Management"><span>Hotel Management</span><img src="img/svg/hotel-management.svg" alt="#" ></a>
+        </li>
+        <li class="menu-icon" data-menuanchor="revenue-management">
+           <a href="#revenue-management" data-toggle="tooltip" title="Revenue Management"><span>Revenue Management</span><img class="icon-svg" src="img/svg/revenue.svg" alt="#" ></a>
+        </li>
+     </ul>
+  </div>
 
 <div class="section" id="section0">
 	<div class="service white">
 		<h1>DIGITAL POWER <br/> FOR YOUR HOTEL</h1>
 		<h2>TUTTI GLI STRUMENTI DI MARKETING DIGITALE PER IL TUO HOTEL</h2>
 	</div>
-<!--
-  <div id="mc_embed_signup">
+
+  <div id="mail-signup">
     <form action="http://ospita.us7.list-manage.com/subscribe/post?u=31354df2e0d65475e24cb2fb7&amp;id=6db61d3ed0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="">
         <label class="control-label" for="mce-EMAIL">RIMANI AGGIORNATO</label>
         <div class="input-group input-group-lg input-no-radius">
            <span class="input-group-addon"><i class="icon-envelope"></i></span>
            <input type="text" class="form-control" id="mce-EMAIL" value="" name="EMAIL" placeholder="Indirizzo Email" required="">
            <span class="input-group-btn">
-           <input type="submit" name="subscribe" class="btn btn-danger" value="Iscriviti">
+           <input type="submit" name="subscribe" class="btn-subscribe" value="Iscriviti">
            </span>
         </div>
     </form>
   </div>
--->
+
 </div>
 
 <div class="section" id="section1">
