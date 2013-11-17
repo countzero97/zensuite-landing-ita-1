@@ -160,8 +160,8 @@ nav #pull {
 	top: 80px;
 	z-index: 1;
 	width: 100%;
-	left: 20px;
-	width: 140px;
+	right: 20px;
+	width: 20px;
 }
 
 #icon-menu span,
@@ -229,15 +229,16 @@ nav #pull {
  }
  #section0{
 	background-image: url(../img/backgrounds/h-land-0.jpg);
-	padding: 8% 0 0 0;
  }
+ #section0 .service { margin-top: -17%; }
 
 
+/*
 
  #section1 .service-text{
 	padding: 13% 0 0 0;
  }
-/*
+
  #section1 .start{
 	background-image: url(../img/backgrounds/h-land-1.jpg);
  }
@@ -250,34 +251,50 @@ nav #pull {
  #section1{
 	background-image: url(../img/backgrounds/h-land-1.jpg);
  }
+ #section1 .service { margin-top: -10%; }
+
+
  #section2{
 	background-image: url(../img/backgrounds/h-land-2.jpg);
-	padding: 17% 0 0 0;
  }
+ #section2 .service { margin-top: -7%; }
+
+
  #section3{
 	background-image: url(../img/backgrounds/h-land-3.jpg);
-	padding: 16% 0 0 0;
  }
+ #section3 .service { margin-top: -8%; }
+
+
  #section4{
 	background-image: url(../img/backgrounds/h-land-4.jpg);
-	padding: 17% 0 0 0;
  }
+ #section4 .service { margin-top: -7%; }
+
+
  #section5{
 	background-image: url(../img/backgrounds/h-land-5.jpg);
-	padding: 14% 0 0 0;
  }
+ #section5 .service { margin-top: -11%; }
+
+
  #section6{
 	background-image: url(../img/backgrounds/h-land-6.jpg);
-	padding: 14% 0 0 0;
  }
+ #section6 .service { margin-top: -10%; }
+
+
  #section7{
 	background-image: url(../img/backgrounds/h-land-7.jpg);
-	padding: 19% 0 0 0;
  }
+ #section7 .service { margin-top: -1%; }
+
+
  #section8{
 	background-image: url(../img/backgrounds/h-land-8.jpg);
-	padding: 13% 0 0 0;
  }
+ #section8 .service { margin-top: -12%; }
+
 
  /*  --------------------------
     MEDIA QUERIES
@@ -326,33 +343,6 @@ nav #pull {
     	h1{
     		font-size: 2em;
     	}
-		 
-		#section0{
-			padding:42% 0 0 0;
-		}
-		#section1{
-			padding:45% 0 0 0;
-		}
-		#section2{
-			padding:60% 0 0 0;
-		}
-		#section3{
-			padding:60% 0 0 0;
-		}
-		#section4{
-			padding:60% 0 0 0;
-		}
-		#section5{
-			padding:43% 0 0 0;
-		}
-		#section6{
-			padding:42% 0 0 0;
-		}
-		#section7{
-			padding:56% 0 0 0;
-		}
-		#section8 {
-			padding:45% 0 0 0;
-		}
+
 
     }

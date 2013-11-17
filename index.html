@@ -35,11 +35,10 @@
 			/* Fullpage scroll */
 			$.fn.fullpage({
 				anchors: ['home', 'website-building','mobile-and-tablets', 'booking-engine', 'facebook-app','social-monitoring', 'channel-manager', 'hotel-management','revenue-management'],
-				verticalCentered: false,
+				verticalCentered: true,
 		        resize : false,
 		        scrollingSpeed: 700,
 		        navigation: false,
-		        navigationPosition: 'left',
 		        loopBottom: false,
 		        loopTop: false,
 		        autoScrolling: goScroll,
@@ -48,7 +47,9 @@
 		        menu: '.menu-stay',
 				
 				afterLoad: function(anchorLink, index){
-			    	$('#section'+(index-1)+' .service').addClass('animated fadeInDown visible');
+					if(goScroll){
+			    		$('#section'+(index-1)+' .service').addClass('animated fadeInDown visible');
+			    	}
 	 			},
 	 			onLeave: function(index, direction){
 	 			}
