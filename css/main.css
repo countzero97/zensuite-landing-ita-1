@@ -156,11 +156,12 @@ nav #pull {
 	font-weight: bold;
 	font-size: 12px;
 	color: #333;
-	position:absolute;
-	top: 80px;
+	position:fixed;
+	top: 50%;
+	margin-top: -185px;
 	z-index: 1;
-	width: 90px;
-	right: 0;
+	width: auto;
+	right: 30px;
 }
 
 #icon-menu span,
@@ -341,6 +342,10 @@ nav #pull {
     @media only screen and (max-width : 600px) {
     	h1{
     		font-size: 2em;
+    	}
+
+    	#mail-signup {
+    		display: none;
     	}
 
 
