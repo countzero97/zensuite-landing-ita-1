@@ -195,7 +195,7 @@ nav #pull {
 	margin-top: 30px;
 	width: 14px;
 	height: 14px;
-	background: url(../../img/bullets.png) no-repeat 0 0;
+	background: url(/img/bullets.png) no-repeat 0 0;
 	display: block;
 
 }
@@ -228,7 +228,7 @@ nav #pull {
 	background-repeat: no-repeat;
  }
  #section0{
-	background-image: url(../../img/backgrounds/h-land-0.jpg);
+	background-image: url(/img/backgrounds/h-land-0.jpg);
  }
  #section0 .service { margin-top: -17%; }
 
@@ -240,58 +240,58 @@ nav #pull {
  }
 
  #section1 .start{
-	background-image: url(../../img/backgrounds/h-land-1.jpg);
+	background-image: url(/img/backgrounds/h-land-1.jpg);
  }
  #section1 .expo{
-	background-image: url(../../img/backgrounds/h-land-5.jpg);
+	background-image: url(/img/backgrounds/h-land-5.jpg);
  }
 */
 
 
  #section1{
-	background-image: url(../../img/backgrounds/h-land-1.jpg);
+	background-image: url(/img/backgrounds/h-land-1.jpg);
  }
  #section1 .service { margin-top: -10%; }
 
 
  #section2{
-	background-image: url(../../img/backgrounds/h-land-2.jpg);
+	background-image: url(/img/backgrounds/h-land-2.jpg);
  }
  #section2 .service { margin-top: -7%; }
 
 
  #section3{
-	background-image: url(../../img/backgrounds/h-land-3.jpg);
+	background-image: url(/img/backgrounds/h-land-3.jpg);
  }
  #section3 .service { margin-top: -8%; }
 
 
  #section4{
-	background-image: url(../../img/backgrounds/h-land-4.jpg);
+	background-image: url(/img/backgrounds/h-land-4.jpg);
  }
  #section4 .service { margin-top: -7%; }
 
 
  #section5{
-	background-image: url(../../img/backgrounds/h-land-5.jpg);
+	background-image: url(/img/backgrounds/h-land-5.jpg);
  }
  #section5 .service { margin-top: -11%; }
 
 
  #section6{
-	background-image: url(../../img/backgrounds/h-land-6.jpg);
+	background-image: url(/img/backgrounds/h-land-6.jpg);
  }
  #section6 .service { margin-top: -10%; }
 
 
  #section7{
-	background-image: url(../../img/backgrounds/h-land-7.jpg);
+	background-image: url(/img/backgrounds/h-land-7.jpg);
  }
  #section7 .service { margin-top: -1%; }
 
 
  #section8{
-	background-image: url(../../img/backgrounds/h-land-8.jpg);
+	background-image: url(/img/backgrounds/h-land-8.jpg);
  }
  #section8 .service { margin-top: -12%; }
 
