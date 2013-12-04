@@ -116,7 +116,7 @@ nav li {
 }
 
 nav li.logo {
-	padding: 9px 0px 5px 0px;
+	padding: 9px 0px 5px 10px;
 }
 
 nav li.logo img{
@@ -350,3 +350,23 @@ nav #pull {
 
 
     }
+
+    
+#jPanelMenu-menu{
+  background: #000;
+  margin-top: 0;
+  padding: 15px 15px 0 15px;
+}
+
+#jPanelMenu-menu a{
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.menu-trigger i {
+  color: #fff;
+  position: absolute;
+  right: 14px;
+  top: 14px;
+}
