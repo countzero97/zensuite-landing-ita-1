@@ -1,7 +1,7 @@
-ospita.me-landing
+zensuite-landing
 =================
 
-Ospita project
+ZenSuite project
 
 
 Helping small hotels managing their online presence
