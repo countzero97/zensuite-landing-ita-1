@@ -1,0 +1,7 @@
+{
+  "name": "zensuite-landing",
+  "devDependencies": {
+    "gulp": "*",
+    "gulp-swig": "*"
+  }
+}

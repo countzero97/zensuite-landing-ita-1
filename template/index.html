@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<title>{{tr["name"]}}</title>
+	<meta name="description" content="Hotel Software Made Easy" />
+	<meta name="keywords" content="hotel software,booking engine,channel manager,hotel website" />
+	
+  <link rel="shortcut icon" href="/img/favicon.ico" />
+	<link rel="stylesheet" type="text/css" href="/css/static/jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="/css/static/main.css" />
+	<link rel="stylesheet" type="text/css" href="/css/static/animate.css" />
+  
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Raleway:400,500,700' rel='stylesheet' type='text/css'>
+		
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>	
+	
+	<script type="text/javascript" src="/js/static/jquery.fullPage.min.js"></script>
+	<script type="text/javascript" src="/js/static/jquery.jpanelmenu.min.js"></script>
+	<script type="text/javascript" src="/js/static/examples.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#section0 .service').addClass('animated fadeInDown visible');
+
+			var goScroll = true;
+			if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+				goScroll = false;
+				$('.service').addClass('visible');
+			}
+
+
+			/* Fullpage scroll */
+			$.fn.fullpage({
+				anchors: ['home', 'website-building','mobile-and-tablets', 'booking-engine', 'facebook-app','social-monitoring', 'channel-manager', 'hotel-management','revenue-management'],
+				verticalCentered: true,
+		        resize : false,
+		        scrollingSpeed: 700,
+		        navigation: false,
+		        loopBottom: false,
+		        loopTop: false,
+		        autoScrolling: goScroll,
+		        scrollOverflow: false,
+		        css3: true,
+		        menu: '.menu-stay',
+				
+				afterLoad: function(anchorLink, index){
+					if(goScroll){
+			    		$('#section'+(index-1)+' .service').addClass('animated fadeInDown visible');
+			    	}
+	 			},
+	 			onLeave: function(index, direction){
+	 			}
+			});
+
+			/* Jpanel Menu */
+			var jPM = $.jPanelMenu({
+			    menu: '.concrete-menu',
+			    trigger: '.menu-trigger',
+			    duration: 300,
+			    keyboardShortcuts: false
+			});
+
+			jPM.on();
+			
+		});
+
+		/* Tooltips */
+		$(function() {
+			$( document ).tooltip({ position: { my: "right-10 center", at: "left center" } });
+		});
+	</script>
+
+</head>
+<body>
+
+
+<nav id="menu" class="menu-stay">
+	<div class="menu-content">
+		<ul class="pull-left">
+	    	<li class="logo"><a href="#home"><img src="/img/logo-in.png"><span>{{tr["name"]}}</span></a></li>
+	    </ul>
+	    <ul class="pull-right concrete-menu">
+	        <!--<li><a href="#">Servizi</a></li>
+	        <li><a href="#">Prezzi</a></li>
+	        --><li><a href="http://blog.zensuite.co.uk">{{tr["Blog"]}}</a></li><!--
+	        <li><a href="#">Accedi</a></li>
+	        <li><a href="#">Registrati</a></li>-->
+	    </ul>
+      
+	    <ul id="pull" class="menu-trigger">
+	    	<li class="logo"><a href="#home"><img src="/img/logo-in.png"><span>{{tr["name"]}}</span></a></li>
+	    	<li><i class="fa fa-bars"></i></li>
+	    </ul>
+      <!--
+      <ul id="pull">
+        <li class="logo"><a href="#home"><img src="/img/logo-in.png"><span>{{tr["name"]}}</span></a></li>
+      </ul>
+      -->
+
+	</div>
+</nav>
+
+
+  <div id="icon-menu" class="menu-stay" >
+     <ul id="icon-navigation" data-role="navigation" >
+     	<li class="menu-icon active" data-menuanchor="home" >
+           <a href="#home" data-toggle="tooltip" title="home" ><span>{{tr["Home"]}}</span></a>
+        </li>
+        <li class="menu-icon" data-menuanchor="website-building">
+           <a href="#website-building" data-toggle="tooltip" title="Website Building" ><span>{{tr["Website Builder"]}}</span></a>
+        </li>
+        <li class="menu-icon" data-menuanchor="mobile-and-tablets" >
+           <a href="#mobile-and-tablets" data-toggle="tooltip" title="Responsive Layout" ><span>{{tr["Responsive Layout"]}}</span></a>
+        </li>
+        <li class="menu-icon" data-menuanchor="booking-engine">
+           <a href="#booking-engine" data-toggle="tooltip" title="Booking Engine"><span>{{tr["Booking Engine"]}}</span><img src="/img/svg/booking.svg" alt="#" ></a>
+        </li>
+        <li class="menu-icon" data-menuanchor="facebook-app">
+           <a href="#facebook-app" data-toggle="tooltip" title="Facebook App" ><span>{{tr["Facebook App"]}}</span><img src="/img/svg/facebook-app.svg" alt="#" ></a>
+        </li>
+        <li class="menu-icon" data-menuanchor="social-monitoring">
+           <a href="#social-monitoring" data-toggle="tooltip" title="Social Monitoring"><span>{{tr["Social Monitoring"]}}</span><img src="/img/svg/social-monitoring.svg" alt="#" ></a>
+        </li>
+        <li class="menu-icon" data-menuanchor="channel-manager">
+           <a href="#channel-manager" data-toggle="tooltip" title="Channel Manager"><span>{{tr["Channel Manager"]}}</span><img src="/img/svg/channel-manager.svg" alt="#" ></a>
+        </li>
+        <li class="menu-icon" data-menuanchor="hotel-management">
+           <a href="#hotel-management" data-toggle="tooltip" title="Hotel Management"><span>{{tr["Hotel Management"]}}</span><img src="/img/svg/hotel-management.svg" alt="#" ></a>
+        </li>
+        <li class="menu-icon" data-menuanchor="revenue-management">
+           <a href="#revenue-management" data-toggle="tooltip" title="Revenue Management"><span>{{tr["Revenue Management"]}}</span><img class="icon-svg" src="/img/svg/revenue.svg" alt="#" ></a>
+        </li>
+     </ul>
+  </div>
+
+<div class="section" id="section0">
+	<div class="service white">
+		<h1>{{tr["HOTEL SOFTWARE"]}}<br/>{{tr["MADE EASY"]}}</h1>
+		<h2>{{tr["One beautiful and easy solution to all your digital needs"]}}</h2>
+	</div>
+
+  <div id="mail-signup">
+    <form action="http://ospita.us7.list-manage.com/subscribe/post?u=31354df2e0d65475e24cb2fb7&amp;id=6db61d3ed0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="">
+        <label class="control-label" for="mce-EMAIL">{{tr["STAY TUNED"]}}</label>
+        <div class="input-group input-group-lg input-no-radius">
+           <span class="input-group-addon"><i class="icon-envelope"></i></span>
+           <input type="text" class="form-control" id="mce-EMAIL" value="" name="EMAIL" placeholder="{{tr["Email Address"]}}" required="">
+           <span class="input-group-btn">
+           <input type="submit" name="subscribe" class="btn-subscribe" value="{{tr["Subscribe"]}}">
+           </span>
+        </div>
+    </form>
+  </div>
+
+</div>
+
+<div class="section" id="section1">
+	<!--<div class="slide start">-->
+		<div class="service service-text">
+			<h1>{{tr["BUILD YOUR"]}}<br/>{{tr["PROPERTY WEBSITE"]}}</h1>
+			<h2>{{tr["Choose one of the many templates carefully crafted by our designers and take your business online"]}}</h2>
+		</div>
+  <!--
+  </div>
+	<div class="slide expo">
+		<div class="service service-text">
+			<h1>SERVICE DESCRIPTION</h1>
+			<p>Service text 1</p>
+		</div>
+	</div>
+  <div class="slide feature">
+		<div class="service service-text">
+			<h1>FEATURE 2</h1>
+			<p>LOREM IPSUM DOLOR SIT AMET</p>
+		</div>
+	</div>
+  -->
+</div>
+
+
+<div class="section white" id="section2">
+	<div class="service service-text">
+		<h1>{{tr["MOBILE"]}}</h1>
+		<h2>{{tr["One tap away from your customers, wherever they are"]}}</h2>
+	</div>
+</div>
+
+<div class="section" id="section3">
+	<div class="service service-text">
+		<h1>{{tr["BOOKING ENGINE"]}}</h1>
+		<h2>{{tr["Intuitive design for you and your guests: turn visitors into buyers"]}}</h2>
+	</div>
+</div>
+
+<div class="section" id="section4">
+	<div class="service service-text">
+		<h1>{{tr["FACEBOOK APP"]}}</h1>
+		<h2>{{tr["Allow your fans to book a room without ever leaving Facebook"]}}</h2>
+	</div>
+</div>
+
+<div class="section" id="section5">
+	<div class="service white">
+		<h1>{{tr["REPUTATION MONITOR"]}}</h1>
+		<h2>{{tr["Easily check your online reputation and compare with your competitors"]}}</h2>
+	</div>
+</div>
+
+<div class="section" id="section6">
+	<div class="service service-text">
+		<h1>{{tr["CHANNEL MANAGER"]}}</h1>
+		<h2>{{tr["Manage all your sales channels from a simple interface"]}}</h2>
+	</div>
+</div>
+
+<div class="section" id="section7">
+	<div class="service white">
+		<h1>{{tr["PROPERTY MANAGEMENT SYSTEM"]}}</h1>
+		<h2>{{tr["Our flexible cloud-based PMS allows you to manage every aspect of your property operations without technical frustrations"]}}</h2>
+	</div>
+</div>
+
+<div class="section" id="section8">
+	<div class="service white">
+		<h1>{{tr["REVENUE MANAGEMENT"]}}</h1>
+		<h2>{{tr["Use solid data to plan and maximize your revenue"]}}</h2>
+	</div>
+</div>
+
+
+
+</body>
+</html>
